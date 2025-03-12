@@ -1,3 +1,4 @@
 ## Ignore the venv directory
 /motorway/venv
 /venv
+.idea/
