@@ -1,0 +1,7 @@
+{
+  "browser": "chrome",
+  "browser_options": [],
+  "maximize_browser_flag": true,
+  "explicit_wait": 30,
+  "base_url": "http://www.motorway.co.uk"
+}

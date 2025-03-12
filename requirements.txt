@@ -1,0 +1,4 @@
+uitestcore==10.6.0
+behave==1.2.6
+parse==1.19.0
+parse-type==0.6.0

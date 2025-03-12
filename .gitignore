@@ -1,4 +1,6 @@
 ## Ignore the venv directory
 /motorway/venv
 /venv
+
+## Ignore the .idea directory
 .idea/
