@@ -1,8 +1,5 @@
 import json
-import logging
 import os
-from behave.model_core import Status
-from uitestcore.utilities import logger_handler
 from uitestcore.utilities.browser_handler import BrowserHandler
 
 """
