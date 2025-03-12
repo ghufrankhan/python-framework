@@ -1,6 +1,8 @@
 import json
+import logging
 import os
 from uitestcore.utilities.browser_handler import BrowserHandler
+from uitestcore.utilities import logger_handler
 
 """
 Description:    This class is executed before any Behave code, loads the browser and reads and sets the configuration.
@@ -21,7 +23,12 @@ def before_all(context):
         context.browser_options = config['browser_options']
         context.maximize_browser = config['maximize_browser_flag']
         context.explicit_wait = config['explicit_wait']
+        context.implicit_wait = config['implicit_wait']
         context.url = config['base_url']
+
+        # Set logging level using commandline argument --logging-level=DEBUG
+        logger_handler.init_unique_log_file_logger(level=context._config.logging_level)
+        context.logger = logging.getLogger("automation_logger")
 
 
 def before_scenario(context, scenario):
