@@ -1,6 +1,6 @@
 # Motorway Project
 
-### NOTES
+## NOTES
 
 1. **Correction in `car_input - V5.txt`**
     - The file initially contained a registration number that appeared to be incorrect: **BM57 BOW**
@@ -12,8 +12,7 @@
     - This function adds a space after the two numbers in a registration number (e.g., **KT17DLX** becomes **KT17 DLX**)
     - Without this function, the test fails during assertion because the registration number format does not match the
       data in `car_output - V5.txt`
-    -
-
+   
 ### Prerequisites
 
 To run the tests, ensure the following are installed and configured:
@@ -87,3 +86,5 @@ To install the required dependencies for the project, follow these steps:
 4. Verify the installation:
     - Once the command completes, all required packages will be installed in the virtual environment, and you’re ready
       to run the project.
+
+### Running the Tests
