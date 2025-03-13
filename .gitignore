@@ -4,3 +4,6 @@
 
 ## Ignore the .idea directory
 .idea/
+
+## Ignore the logs directory
+/logs
