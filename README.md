@@ -46,20 +46,20 @@ To configure the Python interpreter for the project in PyCharm, follow these ste
     - Click on the gear icon next to the interpreter dropdown
     - Select **Add Local Interpreter...**
 
-   <img src="assets/pycharm-interpreter.png" alt="PyCharm Add Interpreter" width="50%" />
+   <img src="assets/pycharm-interpreter.png" alt="PyCharm Add Interpreter" width="75%" />
 
 4. Create venv:
     - Location should be `.../motorway/venv`
     - Click **OK** (Ignore error, the venv already exists for me)
 
-   <img src="assets/pycharm-create-venv.png" alt="PyCharm Add Virtual Environment" width="40%" />
+   <img src="assets/pycharm-create-venv.png" alt="PyCharm Add Virtual Environment" width="55%" />
 
 5. Correct the Project Structure:
     - Navigate to **Project Structure** under **Project: motorway**.
         - Mark required folders as **Sources** (blue folders in the below screenshot)
         - Ensure `venv` is **not** marked as **Excluded**
 
-      <img src="assets/pycharm-structure.png" alt="PyCharm Project Structure" width="50%" />
+      <img src="assets/pycharm-structure.png" alt="PyCharm Project Structure" width="75%" />
 
 6. Click **Apply** and then **OK**
 
@@ -81,7 +81,7 @@ To install the required dependencies for the project, follow these steps:
       ```
     - This will install all the packages listed in `requirements.txt`
 
-      <img src="assets/pip-install.png" alt="Pip Install Screenshot" width="40%" />
+      <img src="assets/pip-install.png" alt="Pip Install Screenshot" width="55%" />
 
 4. Verify the installation:
     - Once the command completes, all required packages will be installed in the virtual environment, and you’re ready
