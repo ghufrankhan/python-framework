@@ -4,12 +4,12 @@
 
 1. **Correction in `car_input - V5.txt`**
     - The file initially contained a registration number that appeared to be incorrect: **BM57 BOW**
-    - I updated it to **BW57 BOF** to match the registration number and corresponding data in `car_output - V5.txt`
+    - I updated it to **BW57 BOF** to match the registration number in `car_output - V5.txt`
 
-2. **Helper Function for Formatting Registration Numbers**
-    - I introduced a helper function named `add_space_after_numbers` (located in `common/common_functions.py`) to ensure
+2. **Helper function for formatting registration numbers**
+    - I created a helper function named `add_space_after_numbers` (located in `common/common_functions.py`) to ensure
       proper formatting of registration numbers
-    - This function adds a space after the two numbers in a registration number (e.g., **KT17DLX** becomes **KT17 DLX**)
+    - This function adds a space after the two numbers in a registration number (e.g. **KT17DLX** becomes **KT17 DLX**)
     - Without this function, the test fails during assertion because the registration number format does not match the
       data in `car_output - V5.txt`
 
@@ -20,6 +20,7 @@ To run the tests, ensure the following are installed and configured:
 - **Git**: Required for cloning the repo
 - **PyCharm**: The IDE I used for running and debugging the tests
 - **Python**: Version 3.9 or higher is required
+- **Chrome browser**: This is specified in the config file (located in `config/CONFIG_FILE.json`)
 
 ### Cloning the Repository
 
@@ -32,11 +33,13 @@ git clone https://github.com/ghufrankhan/motorway.git
 
 ### Setup
 
+Open up the project in **PyCharm**
+
 #### Create Virtual Environment
 
 To configure the Python interpreter for the project in PyCharm, follow these steps:
 
-1. Open **PyCharm** and navigate to **Settings**:
+1. In **PyCharm**, navigate to **Settings**:
     - Go to `File` > `Settings` (or `PyCharm` > `Settings...` on macOS)
 
 2. In the Settings window:
@@ -50,7 +53,7 @@ To configure the Python interpreter for the project in PyCharm, follow these ste
 
 4. Create venv:
     - Location should be `.../motorway/venv`
-    - Click **OK** (Ignore error, the venv already exists for me)
+    - Click **OK** (Ignore the error in the screenshot, the venv already exists for me)
 
    <img src="assets/pycharm-create-venv.png" alt="PyCharm Add Virtual Environment" width="55%" />
 
@@ -68,7 +71,7 @@ To configure the Python interpreter for the project in PyCharm, follow these ste
 To install the required dependencies for the project, follow these steps:
 
 1. Open the **Terminal** in PyCharm:
-    - Click the **Terminal** icon at the bottom of the PyCharm window
+    - Click the **Terminal** icon at the bottom left of the PyCharm window
 
 2. Confirm Virtual Environment status:
     - Ensure the terminal shows the prefix `(venv)` at the beginning of the prompt. This indicates that the virtual
@@ -86,15 +89,15 @@ To install the required dependencies for the project, follow these steps:
 
 4. Verify the installation:
     - Once the command completes, all required packages will be installed in the virtual environment, and you’re ready
-      to run the project.
+      to run the project
 
 ### Running the Tests
 
 #### Create a Run Configuration
 
-To configure and run the tests in PyCharm, follow these steps:
+To configure and run the tests in **PyCharm**, follow these steps:
 
-1. Click on **Current File** in the top right corner of the PyCharm window
+1. Click on **Current File** in the top right corner of the **PyCharm** window
 
 2. Select **Edit Configurations...** from the dropdown menu
 
