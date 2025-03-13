@@ -12,7 +12,7 @@
     - This function adds a space after the two numbers in a registration number (e.g., **KT17DLX** becomes **KT17 DLX**)
     - Without this function, the test fails during assertion because the registration number format does not match the
       data in `car_output - V5.txt`
-   
+
 ### Prerequisites
 
 To run the tests, ensure the following are installed and configured:
@@ -59,7 +59,7 @@ To configure the Python interpreter for the project in PyCharm, follow these ste
         - Mark required folders as **Sources** (blue folders in the below screenshot)
         - Ensure `venv` is **not** marked as **Excluded**
 
-      <img src="assets/pycharm-structure.png" alt="PyCharm Project Structure" width="75%" />
+    <img src="assets/pycharm-structure.png" alt="PyCharm Project Structure" width="75%" />
 
 6. Click **Apply** and then **OK**
 
@@ -79,12 +79,24 @@ To install the required dependencies for the project, follow these steps:
       ```
       pip install -r requirements.txt
       ```
-    - This will install all the packages listed in `requirements.txt`
 
-      <img src="assets/pip-install.png" alt="Pip Install Screenshot" width="55%" />
+    <img src="assets/pip-install.png" alt="Pip Install Screenshot" width="55%" />
+
+    - This will install all the packages listed in `requirements.txt`
 
 4. Verify the installation:
     - Once the command completes, all required packages will be installed in the virtual environment, and you’re ready
       to run the project.
 
 ### Running the Tests
+
+#### Create a Run Configuration
+
+To configure and run the tests in PyCharm, follow these steps:
+
+1. Click on **Current File** in the top right corner of the PyCharm window
+
+2. Select **Edit Configurations...** from the dropdown menu
+
+   <img src="assets/add-run.png" alt="Add Configurations Screenshot" width="75%" />
+   
