@@ -99,4 +99,25 @@ To configure and run the tests in PyCharm, follow these steps:
 2. Select **Edit Configurations...** from the dropdown menu
 
    <img src="assets/add-run.png" alt="Add Configurations Screenshot" width="75%" />
-   
+
+#### Edit the Run Configuration
+
+1. In the **Run/Debug Configurations** window:
+   - Click the **+** icon and select **Python** <sup>[1]</sup>
+   - Set the **Name** to `Run Tests` <sup>[2]</sup>
+
+2. Configure the following settings:
+   - Ensure a valid Python interpreter is selected (this is usually auto filled). Ideally, it should point to the virtual environment you created earlier (e.g. `.../motorway/venv/bin/python`) <sup>[3]</sup>
+   - For **Script path**, select the `__main__.py` file located in the `behave` package within your virtual environment <sup>[4]</sup>
+   - In **Script parameters**, add <sup>[5]</sup>:
+     ```
+     tests --no-capture --format progress2
+     ```
+   - Ensure the **Working directory** is set to the project root (e.g. `.../motorway`) <sup>[6]</sup>
+   - 
+   <img src="assets/config-dialog.png" alt="Run/Debug Configurations Screenshot" width="75%" />
+
+3. Click **OK** to save the configuration
+
+4. Run the tests:
+   - Click the **Run** button (green play icon) to execute the tests
