@@ -2,11 +2,14 @@
 
 ## NOTES
 
-1. **Correction in `car_input - V5.txt`**
+1. **Repository name change**
+    - The repository was previously named `motorway` and has since been renamed to `python-framework`. As a result, some of the screenshots or references may still reflect the old name. Please disregard any inconsistencies.
+
+2. **Correction in `car_input - V5.txt`**
     - The file initially contained a registration number that appeared to be incorrect: **BM57 BOW**
     - I updated it to **BW57 BOF** to match the registration number in `car_output - V5.txt`
 
-2. **Helper function for formatting registration numbers**
+3. **Helper function for formatting registration numbers**
     - I created a helper function named `add_space_after_numbers` (located in `common/common_functions.py`) to ensure
       proper formatting of registration numbers
     - This function adds a space after the two numbers in a registration number (e.g. **KT17DLX** becomes **KT17 DLX**)
@@ -28,7 +31,7 @@ To get started, clone the repository to your local machine using Git. Run the fo
 command prompt:
 
 ```
-git clone https://github.com/ghufrankhan/motorway.git
+git clone https://github.com/ghufrankhan/python-framework.git
 ```
 
 ### Setup
